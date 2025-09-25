@@ -96,6 +96,22 @@ body {
   border: #333 2px solid;
 }
 
+.main-content section.lista-recetas ul li {
+  list-style: none;
+}
+
+.main-content section.lista-recetas ul li button {
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 5px;
+  background: #a0a0a0;
+  border: 1px solid #000000;
+}
+
+.main-content section.lista-recetas ul li button:hover {
+  background: white;
+}
+
 /* Pie de página */
 .footer {
   position: fixed;

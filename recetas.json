@@ -1,0 +1,60 @@
+[
+    {
+        "id": "galletas-almendra",
+        "titulo": "Galletas de Almendra",
+        "descripcion": "Galletas secas y nutritivas hechas con harina de almendras.",
+        "ingredientes": [
+        "150 g de harina de almendras",
+        "2 cucharadas de cacao en polvo",
+        "1 huevo",
+        "50 g de mantequilla derretida",
+        "Edulcorante al gusto"
+        ],
+        "pasos": [
+        "Precalentar el horno a 180°C.",
+        "Mezclar todos los ingredientes hasta formar una masa.",
+        "Formar bolitas y colocarlas en una bandeja para horno.",
+        "Aplastar un poco con un tenedor.",
+        "Hornear durante 12-15 minutos hasta que estén doradas."
+        ]
+    },
+    {
+        "id": "pizza-coliflor",
+        "titulo": "Pizza de Coliflor",
+        "descripcion": "Base de pizza hecha con coliflor rallada.",
+        "ingredientes": [
+        "250 g de coliflor rallada",
+        "1 huevo",
+        "50 g de queso rallado",
+        "Sal y orégano al gusto"
+        ],
+        "pasos": [
+        "Precalentar el horno a 200°C.",
+        "Cocinar la coliflor rallada al vapor y escurrir bien.",
+        "Mezclar con el huevo y el queso.",
+        "Formar la base sobre una bandeja.",
+        "Hornear 20 minutos, añadir toppings y hornear 10 minutos más."
+        ]
+    },
+    {
+        "id": "pan-lentejas",
+        "titulo": "Pan de lentejas",
+        "descripcion": "Un pan nutritivo y sin harina de trigo, ideal para personas que buscan alternativas saludables.",
+        "ingredientes": [
+            "200 g de lentejas cocidas y escurridas",
+            "2 huevos",
+            "50 ml de aceite de oliva",
+            "1 cucharadita de sal",
+            "1 cucharadita de polvo de hornear",
+            "Especias al gusto (orégano, comino, pimienta)"
+        ],
+        "pasos": [
+            "Precalentar el horno a 180°C.",
+            "Procesar las lentejas cocidas hasta obtener un puré.",
+            "Añadir los huevos, el aceite y la sal, mezclar bien.",
+            "Incorporar el polvo de hornear y las especias.",
+            "Colocar la mezcla en un molde aceitado.",
+            "Hornear durante 30-35 minutos hasta que esté firme y dorado."
+        ]
+    }
+]

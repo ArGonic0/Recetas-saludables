@@ -72,6 +72,23 @@ body {
         border-radius: 25px;
         margin-bottom: 40px;
         border: #333 2px solid;
+        &.lista-recetas{
+            ul{
+                li {
+                    list-style: none;
+                    button{
+                        border-radius: 5px;
+                        margin: 5px 0;
+                        padding: 5px;
+                        background: #a0a0a0;
+                        border: 1px solid #000000;
+                        &:hover {
+                            background: white;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
