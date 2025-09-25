@@ -1,26 +1,26 @@
 /* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background: url("./textures/metal-texture.jpg") no-repeat center / 100% 100%;
-  color: #333;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url("../textures/metal-texture.jpg") no-repeat center / 100% 100%;
+    //color: #333;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Encabezado */
 .header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  background: black;
-  color: #fff;
-  padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background: black;
+    color: #fff;
+    padding: 10px;
 
     nav {
         display: flex;
@@ -71,17 +71,18 @@ body {
         padding: 20px;
         border-radius: 25px;
         margin-bottom: 40px;
+        border: #333 2px solid;
     }
 }
 
 /* Pie de página */
 .footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-  background: black;
-  font-size: 0.9rem;
-  color: #dbdbdb;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: black;
+    font-size: 15px;
+    color: #dbdbdb;
 }
