@@ -1,0 +1,18 @@
+{
+    "titulo": "Galletas de almendra",
+    "descripcion": "Galletas secas, duras y con chocolate.",
+    "ingredientes": [
+        "150g de harina de almendras",
+        "50g de cacao en polvo",
+        "1 huevo",
+        "50g de manteca",
+        "40g de azúcar"
+    ],
+    "pasos": [
+        "Precalentar el horno a 180°C.",
+        "Mezclar los ingredientes secos en un bowl.",
+        "Agregar el huevo y la manteca derretida.",
+        "Formar pequeñas bolitas y colocarlas en una bandeja.",
+        "Hornear durante 12-15 minutos."
+    ]
+}

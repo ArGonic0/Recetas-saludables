@@ -1,0 +1,14 @@
+[
+    {
+        "titulo": "Galletas de Almendra",
+        "archivo": "galletas-almendra.json"
+    },
+    {
+        "titulo": "Pan de Lentejas",
+        "archivo": "pan-lentejas.json"
+    },
+    {
+        "titulo": "Empanadas de Papa",
+        "archivo": "empanadas-papa.json"
+    }
+]

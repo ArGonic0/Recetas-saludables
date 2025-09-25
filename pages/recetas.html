@@ -18,12 +18,27 @@
         </nav>
     </header>
     <main class="main-content">
-        
+        <section class="lista-recetas">
+            <h2>Recetas Disponibles</h2>
+            <ul>
+                <li><a href="recetas.html?receta=galletas-almendra">Galletas de Almendra</a></li>
+                <li><a href="recetas.html?receta=pan-lentejas">Pan de Lentejas</a></li>
+            </ul>
+        </section>
+        <section class="receta">
+            <h2 id="titulo"></h2>
+            <p id="descripcion"></p>        
+            <h3>Ingredientes</h3>
+            <ul id="ingredientes"></ul>        
+            <h3>Pasos</h3>
+            <ol id="pasos"></ol>
+        </section>
     </main>
 
     <footer class="footer">
         <p>Hecho en mi tiempo libre desde mi oficina en el trabajo</p>
     </footer>
+    <script src="../scripts/cargar-receta.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

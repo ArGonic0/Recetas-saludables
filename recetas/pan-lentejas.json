@@ -1,0 +1,20 @@
+{
+    "titulo": "Pan de lentejas",
+    "descripcion": "Un pan nutritivo y sin harina de trigo, ideal para personas que buscan alternativas saludables.",
+    "ingredientes": [
+        "200 g de lentejas cocidas y escurridas",
+        "2 huevos",
+        "50 ml de aceite de oliva",
+        "1 cucharadita de sal",
+        "1 cucharadita de polvo de hornear",
+        "Especias al gusto (orégano, comino, pimienta)"
+    ],
+    "pasos": [
+        "Precalentar el horno a 180°C.",
+        "Procesar las lentejas cocidas hasta obtener un puré.",
+        "Añadir los huevos, el aceite y la sal, mezclar bien.",
+        "Incorporar el polvo de hornear y las especias.",
+        "Colocar la mezcla en un molde aceitado.",
+        "Hornear durante 30-35 minutos hasta que esté firme y dorado."
+    ]
+}
