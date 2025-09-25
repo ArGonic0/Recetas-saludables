@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: url("./textures/metal-texture.jpg") no-repeat center/100% 100%;
+  color: #333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Encabezado */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background: black;
+  color: #fff;
+  padding: 10px;
+}
+
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header nav .boton-nav {
+  padding: 10px;
+  width: 150px;
+  margin: 0;
+  background-color: #bbb;
+  color: black;
+  text-decoration: none;
+  border: 0;
+  font-weight: bold;
+}
+
+.header nav .boton-nav:hover {
+  background-color: white;
+}
+
+.header nav .boton-nav.boton-nav-start {
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.header nav .boton-nav.boton-nav-end {
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+/* Contenido principal */
+.main-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 800px;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-content section {
+  background-color: #e2e2e2;
+  padding: 20px;
+  border-radius: 25px;
+  margin-bottom: 40px;
+}
+
+/* Pie de página */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background: black;
+  font-size: 0.9rem;
+  color: #dbdbdb;
+}
+/*# sourceMappingURL=estilos.css.map */
