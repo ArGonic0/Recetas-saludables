@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: url("../textures/metal-texture.jpg") no-repeat center / 100% 100%;
+    background: url("../textures/metal-texture-lite.png") no-repeat center / 100% 100%;
     //color: #333;
     box-sizing: border-box;
     display: flex;
@@ -61,27 +61,41 @@ body {
     height: 100%;
     margin: 0 auto;
     padding: 100px 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
+    //display: flex;
+    //align-items: center;
+    //flex-direction: column;
+    //justify-content: center;
+    .recetas-grid{
+        display: grid;
+        grid-template-columns: 3fr 5fr;
+        gap: 5px;
+        width: 100%;
+    }
     section {
         background-color: #e2e2e2;
-        padding: 20px;
+        padding: 20px;;
         border-radius: 25px;
         margin-bottom: 40px;
         border: #333 2px solid;
         &.lista-recetas{
             ul{
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 li {
                     list-style: none;
+                    width: 100%; // cada li ocupa todo el ancho disponible
+                    display: flex;
+                    justify-content: center;
                     button{
                         border-radius: 5px;
-                        margin: 5px 0;
+                        margin: 5px;
                         padding: 5px;
                         background: #a0a0a0;
                         border: 1px solid #000000;
+                        word-wrap: break-word;
                         &:hover {
                             background: white;
                         }
@@ -89,6 +103,46 @@ body {
                 }
             }
         }
+    }
+}
+
+/* --- Media queries --- */
+
+/* Menor a 650px → una columna */
+@media (max-width: 849px) {
+    .main-content {
+        .recetas-grid {
+            grid-template-columns: 1fr; // stack
+        }
+        .lista-recetas {
+            position: static;   // ya no fijo
+            transform: none;    // quita el translate
+            left: auto;
+            top: auto;
+        }
+    }
+}
+
+/* Mayor o igual a 650px → dos columnas y lista fija */
+@media (min-width: 850px) {
+    .main-content {
+        .recetas-grid {
+            grid-template-columns: 1fr 1fr;
+            height: 100%
+        }
+        .scrollable-list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        //.lista-recetas {
+            //position: fixed;
+            //top: 50%;
+            //left: 10px;
+            //transform: translateY(-50%);
+        //}
     }
 }
 

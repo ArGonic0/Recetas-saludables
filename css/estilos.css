@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: url("../textures/metal-texture.jpg") no-repeat center/100% 100%;
+  background: url("../textures/metal-texture-lite.png") no-repeat center/100% 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -73,19 +73,15 @@ body {
   height: 100%;
   margin: 0 auto;
   padding: 100px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.main-content .recetas-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 5fr;
+      grid-template-columns: 3fr 5fr;
+  gap: 5px;
+  width: 100%;
 }
 
 .main-content section {
@@ -96,20 +92,84 @@ body {
   border: #333 2px solid;
 }
 
+.main-content section.lista-recetas ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .main-content section.lista-recetas ul li {
   list-style: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main-content section.lista-recetas ul li button {
   border-radius: 5px;
-  margin: 5px 0;
+  margin: 5px;
   padding: 5px;
   background: #a0a0a0;
   border: 1px solid #000000;
+  word-wrap: break-word;
 }
 
 .main-content section.lista-recetas ul li button:hover {
   background: white;
+}
+
+/* --- Media queries --- */
+/* Menor a 650px → una columna */
+@media (max-width: 849px) {
+  .main-content .recetas-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .main-content .lista-recetas {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    left: auto;
+    top: auto;
+  }
+}
+
+/* Mayor o igual a 650px → dos columnas y lista fija */
+@media (min-width: 850px) {
+  .main-content .recetas-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    height: 100%;
+  }
+  .main-content .scrollable-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
 }
 
 /* Pie de página */
